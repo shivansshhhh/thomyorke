@@ -5,6 +5,7 @@ import simpleGit from "simple-git";
 const path = "./data.json";
 
 const makeCommits = (n) => {
+  if(n===0) return simpleGit.puch();
   if(n===0) return simpleGit().push();
   const x = random.int(0, 54);
   const y = random.int(0, 6);
